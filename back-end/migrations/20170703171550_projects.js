@@ -11,7 +11,7 @@ exports.up = (knex, Promise) => knex.schema.createTable('projects', (table) => {
   .notNullable();
   table.string('picture', 'varchar(65)')
   .nullable();
-  table.string('description', 'varchar(2000)')
+  table.string('description', 2000)
   .notNullable();
   table.integer('created_by')
   .notNullable()

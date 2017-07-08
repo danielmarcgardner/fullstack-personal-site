@@ -20,9 +20,25 @@ exports.seed = function (knex, Promise) {
     {
       id: 3,
       project_name: 'Trucking Around',
-      github_url: 'https://github.com/danielmarcgardner/CheeSwhiz',
+      github_url: 'https://github.com/danielmarcgardner/Trucking-Around',
       deployed_url: 'http://truckingaround.surge.sh/',
       description: 'Rather than searching through twitter or facebook for updates on trucks, Trucking Around lets users search by location in SF using distance and day of the week filters. The search returns the trucks on the map as well as a side panel where users can get more information about the trucks, add and remove favorites, as well as get directions to the truck.',
+      created_by: 1,
+    },
+    {
+      id: 4,
+      project_name: 'gHoodies',
+      github_url: 'https://github.com/danielmarcgardner/gHoodies',
+      deployed_url: 'https://ghoodies.herokuapp.com/',
+      description: 'gHoodies was born from a challenge from an instructor to students who wanted their galvanize hoodies before graduation. The instructor challenged those who were interested to build a basic fullstack app he could show school administrators and if it worked the cohort would get their hoodies earlier.gHoodies allows current Galvanize Students to search and see if they are in the database. If the student is not they can fill out their information to be added along with sizing specifications. If a student is already in the database they can make changes if needed. To view all records by cohort there is a `View Reports` button that generates the information. Galvanize loved the app and gave all students in the cohort their sweatshirts early. gHoodies is built with HTML, CSS, Materialize, Javascript, jQuery, Node.js, Express, Postgesql, and knex. gSwag lead on the Front-End by Thomas Stang (@tkstang) and on the Back-End by Daniel Gardner (@danielmarcgardner) with contributions by Randall Spencer (@holdonowgo), Matt Muir (@Mattimus333), and Ryan Thissen (@ryanthissen).',
+      created_by: 1,
+    },
+    {
+      id: 5,
+      project_name: 'This Fullstack Personal Blog Site!',
+      github_url: 'https://github.com/danielmarcgardner/fullstack-personal-site',
+      deployed_url: 'http://danielmarcgardner.com',
+      description: 'My personal website! I challenged myself to make a full stack website that included a blog to show off my development skills.',
       created_by: 1,
     },
   ]))
