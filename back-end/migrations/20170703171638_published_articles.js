@@ -8,8 +8,8 @@ exports.up = (knex, Promise) => knex.schema.createTable('published_articles', (t
   .notNullable();
   table.string('article_url', 'varchar(65)')
   .notNullable();
-  table.integer('writer_id')
-  .notNullable()
+  table.integer('author').unsigned();
+  table.foreign('author')
   .references('id')
   .inTable('users')
   .onDelete('CASCADE');

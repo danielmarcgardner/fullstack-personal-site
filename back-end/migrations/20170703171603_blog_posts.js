@@ -2,7 +2,7 @@
 exports.up = (knex, Promise) => knex.schema.createTable('blog_posts', (table) => {
   table.increments('id')
   .primary();
-  table.string('title', 'varchar(30)')
+  table.string('title', 30)
   .notNullable()
   .unique();
   table.string('content', 8000)

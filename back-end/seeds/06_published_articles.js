@@ -7,7 +7,7 @@ exports.seed = function (knex, Promise) {
       title: 'How to Overcome The Fear of Changing Careers',
       source: 'LinkedIn',
       article_url: 'https://www.linkedin.com/pulse/how-overcome-fear-changing-careers-daniel-gardner',
-      writer_id: 1,
+      author: 1,
     },
   ]))
   .then(() => knex.raw('SELECT setval(\'published_articles_id_seq\', (SELECT MAX(id) FROM published_articles))'));

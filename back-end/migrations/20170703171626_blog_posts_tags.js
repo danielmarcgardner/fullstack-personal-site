@@ -1,4 +1,3 @@
-
 exports.up = (knex, Promise) => knex.schema.createTable('blog_posts_tags', (table) => {
   table.increments('id')
   .primary();
@@ -7,7 +6,7 @@ exports.up = (knex, Promise) => knex.schema.createTable('blog_posts_tags', (tabl
   .references('id')
   .inTable('blog_posts')
   .onDelete('CASCADE');
-  table.integer('tag_id')
+  table.integer('tags_id')
   .notNullable()
   .references('id')
   .inTable('tags')
