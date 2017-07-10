@@ -151,5 +151,21 @@ describe('#Projects', (done) => {
             name: 'Daniel Gardner',
           }], done);
     });
+    it('Throws an error when given an id too high or too low', (done) => {
+      const editedProject = {
+        id: 1,
+        project_name: 'lvl^',
+        github_url: 'https://github.com/danielmarcgardner/level-up',
+        deployed_url: 'http://lvlup-galvanize.herokuapp.com/',
+        description: 'This is my capstone project!!!',
+        created_by: 1,
+      };
+      request(app)
+          .patch('/api/projects/500')
+          .set('Accept', 'application/json')
+          .send(editedProject)
+          .expect('Content-Type', 'application/json; charset=utf-8')
+          .expect(400, JSON.stringify('Error with your request. Please check that you have the right id.'), done);
+    });
   });
 });

@@ -53,18 +53,27 @@ router.route('/projects/:id')
   })
   .patch((req, res) => {
     const knex = require('../knex.js');
-    return knex('projects')
-    .join('users', 'users.id', '=', 'projects.created_by')
-    .select('projects.id', 'projects.project_name', 'projects.github_url', 'projects.deployed_url', 'projects.description', 'users.name')
-    .where('projects.id', Number(req.params.id))
-    .update(req.body)
-    .then(project => knex('projects')
-      .join('users', 'users.id', '=', 'projects.created_by')
-      .select('projects.id', 'projects.project_name', 'projects.github_url', 'projects.deployed_url', 'projects.description', 'projects.picture', 'users.name')
-      .where('projects.id', project)
-      .orderBy('id', 'asc'))
-    .then((updatedProject) => {
-      res.status(200).json(updatedProject);
+    return knex('projects').max('id')
+    .then((maxNum) => {
+      if (maxNum[0].max < Number(req.params.id) || Number(req.params.id) < 0) {
+        return res.status(400).json('Error with your request. Please check that you have the right id.');
+      }
+      return knex('projects')
+        .join('users', 'users.id', '=', 'projects.created_by')
+        .select('projects.id', 'projects.project_name', 'projects.github_url', 'projects.deployed_url', 'projects.description', 'users.name')
+        .where('projects.id', Number(req.params.id))
+        .update(req.body)
+        .then(project => knex('projects')
+        .join('users', 'users.id', '=', 'projects.created_by')
+        .select('projects.id', 'projects.project_name', 'projects.github_url', 'projects.deployed_url', 'projects.description', 'projects.picture', 'users.name')
+        .where('projects.id', project)
+        .orderBy('id', 'asc'))
+        .then((updatedProject) => {
+          res.status(200).json(updatedProject);
+        })
+        .catch((err) => {
+          res.status(400).json('Error with your request. Please check that you have the right id.');
+        });
     });
   });
 
