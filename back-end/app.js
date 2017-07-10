@@ -1,6 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const cors = require('cors');
+const login = require('./routes/login.js');
+const signup = require('./routes/signup.js');
+const projects = require('./routes/projects.js');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -28,6 +32,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+app.use('/api', login);
+app.use('/api', signup);
+app.use('/api', projects);
+
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`);
 });
+
+module.exports = app;
