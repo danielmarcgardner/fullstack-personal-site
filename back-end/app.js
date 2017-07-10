@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const login = require('./routes/login.js');
 const signup = require('./routes/signup.js');
+const projects = require('./routes/projects.js');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -33,6 +34,7 @@ app.use(cookieParser());
 
 app.use('/api', login);
 app.use('/api', signup);
+app.use('/api', projects);
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`);

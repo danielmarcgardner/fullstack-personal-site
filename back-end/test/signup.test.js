@@ -27,14 +27,15 @@ after(() => {
   knex.destroy();
 });
 
-describe('#Signup /api/signup', (done) => {
-  it('It should allow a user to signup with an email, password, and name', (done) => {
-    const newUser = {
-      name: 'Annelys Roque',
-      password: 'bulldoggy15',
-      email: 'aroque87@gmail.com',
-    };
-    request(app)
+describe('#Signup', (done) => {
+  describe('POST /api/signup', (done) => {
+    it('It should allow a user to signup with an email, password, and name', (done) => {
+      const newUser = {
+        name: 'Annelys Roque',
+        password: 'bulldoggy15',
+        email: 'aroque87@gmail.com',
+      };
+      request(app)
       .post('/api/signup')
       .set('Accept', 'application/json')
       .send(newUser)
@@ -45,54 +46,55 @@ describe('#Signup /api/signup', (done) => {
         name: 'Annelys Roque',
         email: 'aroque87@gmail.com',
       }, done);
-  });
-  it('Should throw error if user already registered', (done) => {
-    const badUser = {
-      name: 'Daniel Gardner',
-      email: 'daniel.marc.gardner@gmail.com',
-      password: 'temp1234',
-    };
-    request(app)
+    });
+    it('Should throw error if user already registered', (done) => {
+      const badUser = {
+        name: 'Daniel Gardner',
+        email: 'daniel.marc.gardner@gmail.com',
+        password: 'temp1234',
+      };
+      request(app)
       .post('/api/signup')
       .set('Accept', 'application/json')
       .send(badUser)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(400, JSON.stringify('Email is already registered or field missing'), done);
-  });
-  it('Should throw error if missing name', (done) => {
-    const badUser = {
-      password: 'bulldoggy15',
-      email: 'aroque87@gmail.com',
-    };
-    request(app)
+    });
+    it('Should throw error if missing name', (done) => {
+      const badUser = {
+        password: 'bulldoggy15',
+        email: 'aroque87@gmail.com',
+      };
+      request(app)
       .post('/api/signup')
       .set('Accept', 'application/json')
       .send(badUser)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(400, JSON.stringify('Email is already registered or field missing'), done);
-  });
-  it('Should throw error if missing email', (done) => {
-    const badUser = {
-      password: 'bulldoggy15',
-      name: 'Annelys Roque',
-    };
-    request(app)
+    });
+    it('Should throw error if missing email', (done) => {
+      const badUser = {
+        password: 'bulldoggy15',
+        name: 'Annelys Roque',
+      };
+      request(app)
       .post('/api/signup')
       .set('Accept', 'application/json')
       .send(badUser)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(400, JSON.stringify('Email is already registered or field missing'), done);
-  });
-  it('Should throw error if missing passing', (done) => {
-    const badUser = {
-      name: 'Annelys Roque',
-      email: 'aroque87@gmail.com',
-    };
-    request(app)
+    });
+    it('Should throw error if missing passing', (done) => {
+      const badUser = {
+        name: 'Annelys Roque',
+        email: 'aroque87@gmail.com',
+      };
+      request(app)
       .post('/api/signup')
       .set('Accept', 'application/json')
       .send(badUser)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(400, JSON.stringify('Email is already registered or field missing'), done);
+    });
   });
 });
