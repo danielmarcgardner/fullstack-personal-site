@@ -30,7 +30,7 @@ after(() => {
 
 describe('#Blog Posts', (done) => {
   describe('GET /api/blogposts', (done) => {
-    it('Retrieves all blog posts from the database', (done) => {
+    it('Retrieves all blog posts from the database with tags', (done) => {
       request(app)
         .get('/api/blogposts')
         .set('Accept', 'application/json')
@@ -48,6 +48,7 @@ describe('#Blog Posts', (done) => {
             title: 'My Second Blog Post!',
             content: 'Trust fund before they sold out venmo taxidermy fixie meh freegan pour-over brunch. DIY gochujang celiac, fingerstache health goth leggings messenger bag. Raclette pabst fingerstache flexitarian man braid photo booth before they sold out. Tofu bushwick kale chips, neutra activated charcoal VHS meh tumeric church-key pinterest kickstarter meggings tilde coloring book. Gluten-free prism vaporware raclette tofu pinterest. Activated charcoal everyday carry selfies, whatever blue bottle chillwave iPhone kale chips. Semiotics twee vegan, pork belly vexillologist chillwave slow-carb raw denim irony hammock PBR&B chia pour-over literally. Lyft sustainable vegan palo santo. Snackwave chartreuse chillwave tilde, whatever heirloom ennui pinterest vaporware tote bag live-edge typewriter ugh. Asymmetrical affogato gochujang lomo ugh, artisan trust fund. Narwhal scenester subway tile vinyl, chia cornhole four loko locavore pop-up cloud bread. Photo booth occupy next level food truck tilde selvage dreamcatcher hammock gastropub. Brooklyn pork belly edison bulb butcher, prism selfies paleo small batch banjo. Kitsch pug normcore man bun direct trade hell of. DIY messenger bag scenester kinfolk pitchfork semiotics, jean shorts knausgaard actually readymade next level paleo. Chartreuse direct trade small batch cliche, hammock ramps af squid organic austin venmo mixtape williamsburg kickstarter taiyaki. Humblebrag vaporware occupy, chillwave 8-bit aesthetic woke. Church-key selfies locavore, tacos irony raclette direct trade plaid pork belly mumblecore keffiyeh cray hot chicken cloud bread. Vice marfa craft beer art party air plant. Vegan wolf vice glossier direct trade put a bird on it. Hoodie palo santo seitan chia retro, snackwave fanny pack typewriter la croix dreamcatcher fashion axe jianbing kale chips twee. Williamsburg bicycle rights letterpress pabst godard venmo, cloud bread migas drinking vinegar.',
             name: 'Daniel Gardner',
+
           },
         ], done);
     });
@@ -75,6 +76,7 @@ describe('#Blog Posts', (done) => {
         title: 'My Third Post!',
         author: 1,
         content: 'Leggings iPhone salvia dreamcatcher, brooklyn shoreditch biodiesel actually helvetica PBR&B master cleanse. Biodiesel adaptogen post-ironic retro hashtag, health goth schlitz iPhone drinking vinegar occupy gentrify pitchfork keffiyeh. Deep v post-ironic flannel, iceland heirloom echo park kombucha man braid gluten-free blog 3 wolf moon aesthetic. Distillery pok pok pickled fam, jean shorts kale chips PBR&B plaid. Biodiesel polaroid squid authentic distillery. Etsy cliche disrupt, seitan hexagon hashtag squid salvia blog cred. Poke viral truffaut austin. Meh post-ironic kickstarter vinyl humblebrag prism freegan cardigan meditation actually narwhal pickled you probably havent heard of them. VHS poutine chambray plaid franzen taiyaki XOXO bicycle rights thundercats lo-fi organic you probably havent heard of them. Glossier pour-over austin poutine raclette lo-fi single-origin coffee yuccie microdosing readymade irony try-hard YOLO. Tofu hexagon stumptown direct trade authentic. Meh kogi selvage palo santo butcher tousled snackwave. Church-key waistcoat intelligentsia leggings tumeric yr austin kale chips bushwick next level pop-up four dollar toast. Food truck paleo raw denim vegan hammock taxidermy chia occupy pitchfork dreamcatcher tote bag hot chicken activated charcoal seitan glossier.',
+        tags: [1, 2],
       };
       request(app)
       .post('/api/blogposts')
@@ -82,6 +84,9 @@ describe('#Blog Posts', (done) => {
       .send(newPost)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(200)
+      .expect((res) => {
+        // console.log(res.body);
+      })
       .expect([{
         id: 3,
         title: 'My Third Post!',
