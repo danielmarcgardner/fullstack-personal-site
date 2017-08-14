@@ -1,16 +1,19 @@
 const express = require('express');
 const router = express.Router();
+const sorterOfBlogs = require('../helpers/blog_tags_helper');
 
 router.route('/blogposts')
   .get((req, res) => {
     const knex = require('../knex.js');
     return knex('blog_posts')
     .join('users', 'users.id', '=', 'blog_posts.author')
-    // .join('blog_posts_tags', 'blog_posts_tags.blog_posts_id', '=', 'blog_posts.id')
-    // .join('tags', 'tags.id', '=', 'blog_posts_tags.tags_id')
-    .select('blog_posts.id', 'blog_posts.title', 'blog_posts.content', 'users.name')
+    .join('blog_posts_tags', 'blog_posts_tags.blog_posts_id', '=', 'blog_posts.id')
+    .join('tags', 'tags.id', '=', 'blog_posts_tags.tags_id')
+    .select('blog_posts.id', 'blog_posts.title', 'blog_posts.content', 'users.name', 'tags.tag')
+    .orderBy('blog_posts.id', 'asc')
     .then((blogPosts) => {
-      res.status(200).json(blogPosts);
+      const fixedTags = sorterOfBlogs(blogPosts);
+      res.status(200).json(fixedTags);
     })
     .catch((err) => {
       console.log(err);
