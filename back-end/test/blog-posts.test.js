@@ -105,12 +105,18 @@ describe('#Blog Posts', (done) => {
       .expect((res) => {
         // console.log(res.body);
       })
-      .expect([{
-        id: 3,
-        title: 'My Third Post!',
-        name: 'Daniel Gardner',
-        content: 'Leggings iPhone salvia dreamcatcher, brooklyn shoreditch biodiesel actually helvetica PBR&B master cleanse. Biodiesel adaptogen post-ironic retro hashtag, health goth schlitz iPhone drinking vinegar occupy gentrify pitchfork keffiyeh. Deep v post-ironic flannel, iceland heirloom echo park kombucha man braid gluten-free blog 3 wolf moon aesthetic. Distillery pok pok pickled fam, jean shorts kale chips PBR&B plaid. Biodiesel polaroid squid authentic distillery. Etsy cliche disrupt, seitan hexagon hashtag squid salvia blog cred. Poke viral truffaut austin. Meh post-ironic kickstarter vinyl humblebrag prism freegan cardigan meditation actually narwhal pickled you probably havent heard of them. VHS poutine chambray plaid franzen taiyaki XOXO bicycle rights thundercats lo-fi organic you probably havent heard of them. Glossier pour-over austin poutine raclette lo-fi single-origin coffee yuccie microdosing readymade irony try-hard YOLO. Tofu hexagon stumptown direct trade authentic. Meh kogi selvage palo santo butcher tousled snackwave. Church-key waistcoat intelligentsia leggings tumeric yr austin kale chips bushwick next level pop-up four dollar toast. Food truck paleo raw denim vegan hammock taxidermy chia occupy pitchfork dreamcatcher tote bag hot chicken activated charcoal seitan glossier.',
-      }], done);
+      .expect([
+        {
+          id: 3,
+          blogTitle: 'My Third Post!',
+          text: 'Leggings iPhone salvia dreamcatcher, brooklyn shoreditch biodiesel actually helvetica PBR&B master cleanse. Biodiesel adaptogen post-ironic retro hashtag, health goth schlitz iPhone drinking vinegar occupy gentrify pitchfork keffiyeh. Deep v post-ironic flannel, iceland heirloom echo park kombucha man braid gluten-free blog 3 wolf moon aesthetic. Distillery pok pok pickled fam, jean shorts kale chips PBR&B plaid. Biodiesel polaroid squid authentic distillery. Etsy cliche disrupt, seitan hexagon hashtag squid salvia blog cred. Poke viral truffaut austin. Meh post-ironic kickstarter vinyl humblebrag prism freegan cardigan meditation actually narwhal pickled you probably havent heard of them. VHS poutine chambray plaid franzen taiyaki XOXO bicycle rights thundercats lo-fi organic you probably havent heard of them. Glossier pour-over austin poutine raclette lo-fi single-origin coffee yuccie microdosing readymade irony try-hard YOLO. Tofu hexagon stumptown direct trade authentic. Meh kogi selvage palo santo butcher tousled snackwave. Church-key waistcoat intelligentsia leggings tumeric yr austin kale chips bushwick next level pop-up four dollar toast. Food truck paleo raw denim vegan hammock taxidermy chia occupy pitchfork dreamcatcher tote bag hot chicken activated charcoal seitan glossier.',
+          author: 'Daniel Gardner',
+          tags: [
+            'Javascript',
+            'Technology',
+          ],
+        },
+      ], done);
     });
   });
   describe('PATCH /api/blogposts/:id', (done) => {
@@ -121,16 +127,23 @@ describe('#Blog Posts', (done) => {
         content: 'NEW TEXT!!!!!',
       };
       request(app)
-      .patch('/api/blogposts')
+      .patch('/api/blogposts/1')
       .set('Accept', 'application/json')
       .send(updatedPost)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(200)
       .expect([{
         id: 1,
-        title: 'My First Post!',
-        name: 'Daniel Gardner',
-        content: 'NEW TEXT!!!!!',
+        blogTitle: 'My First Post!',
+        author: 'Daniel Gardner',
+        text: 'NEW TEXT!!!!!',
+        tags:
+        ['Javascript',
+          'Technology',
+          'React',
+          'Front End',
+          'Life',
+          'Career'],
       }], done);
     });
   });
