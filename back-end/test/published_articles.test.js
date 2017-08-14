@@ -106,7 +106,7 @@ describe('#Published Articles', (done) => {
       .expect(200)
       .expect([
         {
-          id: 2,
+          id: 1,
           title: 'How to Overcome The Fear of Changing Careers',
           source: 'Medium',
           article_url: 'https://medium.com/@danielgardner/how-to-overcome-the-fear-of-changing-careers-8d5081225f34',
