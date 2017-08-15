@@ -11,13 +11,10 @@ router.route('/blogposts')
     .join('tags', 'tags.id', '=', 'blog_posts_tags.tags_id')
     .select('blog_posts.id', 'blog_posts.title', 'blog_posts.content', 'users.name', 'tags.tag')
     .orderBy('blog_posts.id', 'asc')
-    .then(blogPosts => res.status(200).json(sorterOfBlogs(blogPosts)))
-    .catch((err) => {
-      console.log(err);
-    });
+    .then(blogPosts => res.status(200).json(sorterOfBlogs(blogPosts)));
   })
 
-  .post((req, res) => {
+  .post((req, res, next) => {
     const knex = require('../knex.js');
     const newPost = {
       title: req.body.title,
@@ -45,7 +42,7 @@ router.route('/blogposts')
       .where('blog_posts.content', '=', req.body.content)
       .orderBy('blog_posts.id', 'asc'))
       .then(toSend => res.status(200).json(sorterOfBlogs(toSend)))
-      .catch(err => console.error(err));
+      .catch(err => res.status(400).json({ error: 'An Error has occured. Please Check to make sure the article has all required fields' }));
   });
 
 router.route('/blogposts/:id')
@@ -55,13 +52,19 @@ router.route('/blogposts/:id')
     knex('blog_posts')
     .where('blog_posts.id', '=', id)
     .update(req.body)
-    .then(updated => knex('blog_posts')
+    .then((updated) => {
+      if (updated === 0) {
+        return res.status(400).end({ error: 'An Error has occured. Please Check to make sure you are selecting a valid blog post' });
+      }
+      return knex('blog_posts')
       .where('blog_posts.id', '=', id)
       .join('users', 'users.id', '=', 'blog_posts.author')
       .join('blog_posts_tags', 'blog_posts_tags.blog_posts_id', '=', 'blog_posts.id')
       .join('tags', 'tags.id', '=', 'blog_posts_tags.tags_id')
-      .select('blog_posts.id', 'blog_posts.title', 'blog_posts.content', 'users.name', 'tags.tag'))
-    .then(toSend => res.status(200).json(sorterOfBlogs(toSend)));
+      .select('blog_posts.id', 'blog_posts.title', 'blog_posts.content', 'users.name', 'tags.tag');
+    })
+    .then(toSend => res.status(200).json(sorterOfBlogs(toSend)))
+    .catch(err => res.status(400).json({ error: 'An Error has occured. Please Check to make sure you are selecting a valid blog post' }));
   })
   .get((req, res) => {
     const knex = require('../knex.js');
@@ -72,7 +75,13 @@ router.route('/blogposts/:id')
     .join('blog_posts_tags', 'blog_posts_tags.blog_posts_id', '=', 'blog_posts.id')
     .join('tags', 'tags.id', '=', 'blog_posts_tags.tags_id')
     .select('blog_posts.id', 'blog_posts.title', 'blog_posts.content', 'users.name', 'tags.tag')
-    .then(toSend => res.status(200).json(sorterOfBlogs(toSend)));
+    .then((toSend) => {
+      if (toSend.length === 0) {
+        return res.status(400).end({ error: 'An Error has occured. Please Check to make sure you are selecting a valid blog post' });
+      }
+      return res.status(200).json(sorterOfBlogs(toSend));
+    })
+    .catch(err => res.status(400).json({ error: 'An Error has occured. Please Check to make sure you are selecting a valid blog post' }));
   });
 
 

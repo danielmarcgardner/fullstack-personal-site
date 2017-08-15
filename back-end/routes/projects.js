@@ -12,6 +12,7 @@ router.route('/projects')
       res.status(200).json(projects);
     })
     .catch((err) => {
+ /* istanbul ignore next */
       console.log(err);
     });
   })
