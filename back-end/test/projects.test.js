@@ -97,6 +97,14 @@ describe('#Projects', (done) => {
             name: 'Daniel Gardner',
           }], done);
     });
+    it('Throws an error when the project does not exist', (done) => {
+      request(app)
+        .get('/api/projects/500')
+        .set('Accept', 'application/json')
+        .expect('Content-Type', 'application/json; charset=utf-8')
+        .expect(400)
+        .expect({ error: 'An Error has occured. Please Check to make sure you are selecting a valid blog post' }, done);
+    });
   });
   describe('POST /api/projects', (done) => {
     it('Adds a project to the database', (done) => {
@@ -122,6 +130,19 @@ describe('#Projects', (done) => {
           picture: null,
           name: 'Daniel Gardner',
         }], done);
+    });
+    it('Throws an error when not all required fields are present', (done) => {
+      const newProjectBadProject = {
+        project_name: 'Learn To Code Workshop Materials',
+        github_url: 'https://github.com/danielmarcgardner/LearnToCode-HTML-CSS',
+      };
+      request(app)
+        .post('/api/projects')
+        .set('Accept', 'application/json')
+        .send(newProjectBadProject)
+        .expect('Content-Type', 'application/json; charset=utf-8')
+        .expect(400)
+        .expect({ error: 'An Error has occured. Please Check you have all required fields' }, done);
     });
   });
   describe('PATCH /api/projects/:id', (done) => {
@@ -166,6 +187,19 @@ describe('#Projects', (done) => {
           .send(editedProject)
           .expect('Content-Type', 'application/json; charset=utf-8')
           .expect(400, JSON.stringify('Error with your request. Please check that you have the right id.'), done);
+    });
+    it('Throw an error if sending a bad body request', (done) => {
+      const updated = {
+        bad: 'Not Good',
+        nope: 'Not Good',
+      };
+      request(app)
+      .patch('/api/projects/1')
+      .set('Accept', 'application/json')
+      .send(updated)
+      .expect('Content-Type', 'application/json; charset=utf-8')
+      .expect(400)
+      .expect({ error: 'Error with your request. Please check the body of your request.' }, done);
     });
   });
 });

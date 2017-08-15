@@ -64,6 +64,14 @@ describe('#Published Articles', (done) => {
         },
       ], done);
     });
+    it('Throws an error if the article doesnt exist', (done) => {
+      request(app)
+      .get('/api/articles/500')
+      .set('Accept', 'application/json')
+      .expect('Content-Type', 'application/json; charset=utf-8')
+      .expect(400)
+      .expect({ error: 'An Error has occured. Please Check to make sure you are selecting a valid article' }, done);
+    });
   });
   describe('POST /api/articles', (done) => {
     it('Add a new article to the database', (done) => {
@@ -113,6 +121,21 @@ describe('#Published Articles', (done) => {
           name: 'Daniel Gardner',
         },
       ], done);
+    });
+    it('Throws an error if the updated article doesnt exist', (done) => {
+      const updated = {
+        title: 'How to Overcome The Fear of Changing Careers',
+        source: 'Medium',
+        article_url: 'https://medium.com/@danielgardner/how-to-overcome-the-fear-of-changing-careers-8d5081225f34',
+        author: 1,
+      };
+      request(app)
+      .patch('/api/articles/500')
+      .set('Accept', 'application/json')
+      .send(updated)
+      .expect('Content-Type', 'application/json; charset=utf-8')
+      .expect(400)
+      .expect({ error: 'An Error has occured. Please Check to make sure you are selecting a valid article' }, done);
     });
   });
 });

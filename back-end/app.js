@@ -7,6 +7,7 @@ const signup = require('./routes/signup.js');
 const projects = require('./routes/projects.js');
 const blogPosts = require('./routes/blog-posts.js');
 const articles = require('./routes/published-articles.js');
+const tags = require('./routes/tags.js');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -41,6 +42,7 @@ app.use('/api', signup);
 app.use('/api', projects);
 app.use('/api', blogPosts);
 app.use('/api', articles);
+app.use('/api', tags);
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`);

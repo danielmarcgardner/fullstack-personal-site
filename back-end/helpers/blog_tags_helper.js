@@ -6,7 +6,7 @@ function sorterOfBlogs(blog) {
       blogArr.push({ id: blog[i].id, blogTitle: blog[i].title, text: blog[i].content, author: blog[i].name, tags: [blog[i].tag] });
     } else if (blog[i].id === blog[i - 1].id) {
       blogArr[x].tags.push(blog[i].tag);
-    } else if (blog[i].id !== blog[i - 1].id) {
+    } else {
       blogArr.push({ id: blog[i].id, blogTitle: blog[i].title, text: blog[i].content, author: blog[i].name, tags: [blog[i].tag] });
     }
   }
