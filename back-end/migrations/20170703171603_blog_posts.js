@@ -12,6 +12,7 @@ exports.up = (knex, Promise) => knex.schema.createTable('blog_posts', (table) =>
   .references('id')
   .inTable('users')
   .onDelete('CASCADE');
+  table.timestamps(true, true);
 });
 
 exports.down = (knex, Promise) => knex.schema.dropTable('blog_posts');

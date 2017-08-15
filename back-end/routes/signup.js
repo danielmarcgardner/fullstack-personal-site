@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt-as-promised');
-
+ /* istanbul ignore next */
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
 }

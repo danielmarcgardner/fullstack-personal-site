@@ -32,6 +32,11 @@ exports.seed = function (knex, Promise) {
       blog_posts_id: 1,
       tags_id: 6,
     },
+    {
+      id: 7,
+      blog_posts_id: 2,
+      tags_id: 1,
+    },
   ]))
   .then(() => knex.raw('SELECT setval(\'blog_posts_tags_id_seq\', (SELECT MAX(id) FROM blog_posts_tags))'));
 };

@@ -8,13 +8,9 @@ router.route('/projects')
     .join('users', 'users.id', '=', 'projects.created_by')
     .select('projects.id', 'projects.project_name', 'projects.github_url', 'projects.deployed_url', 'projects.description', 'users.name')
     .orderBy('id', 'asc')
-    .then((projects) => {
-      res.status(200).json(projects);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+    .then(projects => res.status(200).json(projects));
   })
+
   .post((req, res) => {
     const knex = require('../knex.js');
     const newProject = {
@@ -31,9 +27,10 @@ router.route('/projects')
       .select('projects.id', 'projects.project_name', 'projects.github_url', 'projects.deployed_url', 'projects.description', 'projects.picture', 'users.name')
       .where('projects.id', project[0].id)
       .orderBy('id', 'asc'))
-      .then((projects) => {
-        res.status(200).json(projects);
-      });
+    .then((projects) => {
+      res.status(200).json(projects);
+    })
+    .catch(err => res.status(400).json({ error: 'An Error has occured. Please Check you have all required fields' }));
   });
 
 router.route('/projects/:id')
@@ -45,11 +42,12 @@ router.route('/projects/:id')
     .where('projects.id', Number(req.params.id))
     .orderBy('id', 'asc')
     .then((projects) => {
-      res.status(200).json(projects);
+      if (projects.length === 0) {
+        return res.status(400).end({ error: 'An Error has occured. Please Check to make sure you are selecting a valid blog post' });
+      }
+      return res.status(200).json(projects);
     })
-    .catch((err) => {
-      console.log(err);
-    });
+    .catch(err => res.status(400).json({ error: 'An Error has occured. Please Check to make sure you are selecting a valid blog post' }));
   })
   .patch((req, res) => {
     const knex = require('../knex.js');
@@ -72,7 +70,7 @@ router.route('/projects/:id')
           res.status(200).json(updatedProject);
         })
         .catch((err) => {
-          res.status(400).json('Error with your request. Please check that you have the right id.');
+          res.status(400).json({ error: 'Error with your request. Please check the body of your request.' });
         });
     });
   });
