@@ -8,6 +8,7 @@ const projects = require('./routes/projects.js');
 const blogPosts = require('./routes/blog-posts.js');
 const articles = require('./routes/published-articles.js');
 const tags = require('./routes/tags.js');
+const verifyLoggedIn = require('./middleware/auth.js');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -39,6 +40,10 @@ app.use(cookieParser());
 
 app.use('/api', login);
 app.use('/api', signup);
+
+// To Check for if user is loggedin
+app.use(verifyLoggedIn);
+
 app.use('/api', projects);
 app.use('/api', blogPosts);
 app.use('/api', articles);

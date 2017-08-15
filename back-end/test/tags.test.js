@@ -34,6 +34,7 @@ describe('#Tags', (done) => {
       request(app)
         .get('/api/tags')
         .set('Accept', 'application/json')
+        .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
         .expect('Content-Type', 'application/json; charset=utf-8')
         .expect(200)
         .expect([
@@ -70,6 +71,7 @@ describe('#Tags', (done) => {
       request(app)
         .post('/api/tags')
         .set('Accept', 'application/json')
+        .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
         .send(newTag)
         .expect('Content-Type', 'application/json; charset=utf-8')
         .expect(200)
@@ -80,6 +82,7 @@ describe('#Tags', (done) => {
       request(app)
         .post('/api/tags')
         .set('Accept', 'application/json')
+        .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
         .send(badTag)
         .expect('Content-Type', 'application/json; charset=utf-8')
         .expect(400)
@@ -95,6 +98,7 @@ describe('#Tags', (done) => {
       request(app)
       .post('/api/tags/blog')
       .set('Accept', 'application/json')
+      .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
       .send(blog_tag)
       .expect('Content-Type', 'text/plain; charset=utf-8')
       .expect(200, done);
@@ -107,6 +111,7 @@ describe('#Tags', (done) => {
       request(app)
       .post('/api/tags/blog')
       .set('Accept', 'application/json')
+      .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
       .send(blogTag)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(400, { error: 'Error adding tag. Please check your blog or tag ID' }, done);
@@ -119,6 +124,7 @@ describe('#Tags', (done) => {
       request(app)
       .post('/api/tags/blog')
       .set('Accept', 'application/json')
+      .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
       .send(blogTag)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(400, { error: 'Error adding tag. Please check your blog or tag ID' }, done);

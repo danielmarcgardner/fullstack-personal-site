@@ -34,6 +34,7 @@ describe('#Projects', (done) => {
       request(app)
         .get('/api/projects')
         .set('Accept', 'application/json')
+        .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
         .expect('Content-Type', 'application/json; charset=utf-8')
         .expect(200)
         .expect([
@@ -85,6 +86,7 @@ describe('#Projects', (done) => {
       request(app)
         .get('/api/projects/1')
         .set('Accept', 'application/json')
+        .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
         .expect('Content-Type', 'application/json; charset=utf-8')
         .expect(200)
         .expect([
@@ -101,6 +103,7 @@ describe('#Projects', (done) => {
       request(app)
         .get('/api/projects/500')
         .set('Accept', 'application/json')
+        .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
         .expect('Content-Type', 'application/json; charset=utf-8')
         .expect(400)
         .expect({ error: 'An Error has occured. Please Check to make sure you are selecting a valid blog post' }, done);
@@ -118,6 +121,7 @@ describe('#Projects', (done) => {
       request(app)
         .post('/api/projects')
         .set('Accept', 'application/json')
+        .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
         .send(newProject)
         .expect('Content-Type', 'application/json; charset=utf-8')
         .expect(200)
@@ -139,6 +143,7 @@ describe('#Projects', (done) => {
       request(app)
         .post('/api/projects')
         .set('Accept', 'application/json')
+        .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
         .send(newProjectBadProject)
         .expect('Content-Type', 'application/json; charset=utf-8')
         .expect(400)
@@ -158,6 +163,7 @@ describe('#Projects', (done) => {
       request(app)
         .patch('/api/projects/1')
         .set('Accept', 'application/json')
+        .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
         .send(editedProject)
         .expect('Content-Type', 'application/json; charset=utf-8')
         .expect(200)
@@ -184,6 +190,7 @@ describe('#Projects', (done) => {
       request(app)
           .patch('/api/projects/500')
           .set('Accept', 'application/json')
+          .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
           .send(editedProject)
           .expect('Content-Type', 'application/json; charset=utf-8')
           .expect(400, JSON.stringify('Error with your request. Please check that you have the right id.'), done);
@@ -196,6 +203,7 @@ describe('#Projects', (done) => {
       request(app)
       .patch('/api/projects/1')
       .set('Accept', 'application/json')
+      .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
       .send(updated)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(400)
