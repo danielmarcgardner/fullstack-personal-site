@@ -1,0 +1,26 @@
+#navbar {
+  width: 101%;
+  height: 50px;
+  background-color: #202938;
+}
+
+.navitem {
+  display: inline-block;
+  color: #679ffc;
+  text-align: center;
+  height: 35px;
+  padding-top:15px;
+  width: 75px;
+}
+
+.navitem:hover {
+  color: #202938;
+  background-color: #679ffc;
+  cursor: pointer
+}
+
+#navlinks {
+  float: right;
+  margin-right: 5%;
+  height:inherit;
+}
