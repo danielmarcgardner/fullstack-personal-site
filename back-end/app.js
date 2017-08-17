@@ -42,7 +42,15 @@ app.use('/api', login);
 app.use('/api', signup);
 
 // To Check for if user is loggedin
-app.use(verifyLoggedIn);
+
+app.post('/api/blogposts', verifyLoggedIn);
+app.patch('/api/blogposts/:id', verifyLoggedIn);
+app.post('/api/projects', verifyLoggedIn);
+app.patch('/api/projects/:id', verifyLoggedIn);
+app.post('/api/articles', verifyLoggedIn);
+app.patch('/api/articles/:id', verifyLoggedIn);
+app.post('/api/tags', verifyLoggedIn);
+app.post('/api/tags/blog', verifyLoggedIn);
 
 app.use('/api', projects);
 app.use('/api', blogPosts);

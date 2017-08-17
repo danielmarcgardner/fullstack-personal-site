@@ -34,7 +34,7 @@ describe('#Published Articles', (done) => {
       request(app)
       .get('/api/articles')
       .set('Accept', 'application/json')
-      .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
+      // .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(200)
       .expect([
@@ -53,7 +53,7 @@ describe('#Published Articles', (done) => {
       request(app)
       .get('/api/articles/1')
       .set('Accept', 'application/json')
-      .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
+      // .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(200)
       .expect([
@@ -70,7 +70,7 @@ describe('#Published Articles', (done) => {
       request(app)
       .get('/api/articles/500')
       .set('Accept', 'application/json')
-      .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
+      // .set('Cookie', 'dgAuth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDI4MjIyOTAsImV4cCI6MTUwMzQyNzA5MH0.1L7v23Q6t0VWx8P59gJO5rFqPDq5y3FdcEVA6EdI7OI')
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(400)
       .expect({ error: 'An Error has occured. Please Check to make sure you are selecting a valid article' }, done);
