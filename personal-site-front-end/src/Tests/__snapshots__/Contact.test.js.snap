@@ -1,0 +1,461 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact Hero Div Renders 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    id="contacthero"
+>
+    <Container>
+        <h1
+            id="contactheroheader"
+        >
+            Contact
+        </h1>
+        <Grid
+            centered={true}
+            columns={2}
+            stackable={true}
+            textAlign="center"
+        >
+            <GridRow>
+                <GridColumn
+                    computer={4}
+                    mobile={16}
+                    tablet={8}
+                >
+                    <div
+                        className="contactdivs"
+                    >
+                        <a
+                            href="mailto:daniel.marc.gardner@gmail.com"
+                        >
+                            <h3>
+                                Email Me
+                            </h3>
+                            <p>
+                                daniel.marc.gardner@gmail.com
+                            </p>
+                        </a>
+                    </div>
+                </GridColumn>
+                <GridColumn
+                    computer={4}
+                    mobile={16}
+                    tablet={8}
+                >
+                    <div
+                        className="contactdivs"
+                    >
+                        <a
+                            href="https://github.com/danielmarcgardner"
+                        >
+                            <h3>
+                                GitHub
+                            </h3>
+                            <p>
+                                @danielmarcgardner
+                            </p>
+                        </a>
+                    </div>
+                </GridColumn>
+                <GridColumn
+                    computer={4}
+                    mobile={16}
+                    tablet={8}
+                >
+                    <div
+                        className="contactdivs"
+                    >
+                        <a
+                            href="https://www.linkedin.com/in/danielmarcgardner/"
+                        >
+                            <h3>
+                                LinkedIn
+                            </h3>
+                            <p>
+                                @danielmarcgardner
+                            </p>
+                        </a>
+                    </div>
+                </GridColumn>
+                <GridColumn
+                    computer={4}
+                    mobile={16}
+                    tablet={8}
+                >
+                    <div
+                        className="contactdivs"
+                    >
+                        <a
+                            href="https://twitter.com/danielmgardner1"
+                        >
+                            <h3>
+                                Twitter
+                            </h3>
+                            <p>
+                                @danielmgardner1
+                            </p>
+                        </a>
+                    </div>
+                </GridColumn>
+            </GridRow>
+        </Grid>
+    </Container>
+</div>,
+  "nodes": Array [
+    <div
+      id="contacthero"
+>
+      <Container>
+            <h1
+                  id="contactheroheader"
+            >
+                  Contact
+            </h1>
+            <Grid
+                  centered={true}
+                  columns={2}
+                  stackable={true}
+                  textAlign="center"
+            >
+                  <GridRow>
+                        <GridColumn
+                              computer={4}
+                              mobile={16}
+                              tablet={8}
+                        >
+                              <div
+                                    className="contactdivs"
+                              >
+                                    <a
+                                          href="mailto:daniel.marc.gardner@gmail.com"
+                                    >
+                                          <h3>
+                                                Email Me
+                                          </h3>
+                                          <p>
+                                                daniel.marc.gardner@gmail.com
+                                          </p>
+                                    </a>
+                              </div>
+                        </GridColumn>
+                        <GridColumn
+                              computer={4}
+                              mobile={16}
+                              tablet={8}
+                        >
+                              <div
+                                    className="contactdivs"
+                              >
+                                    <a
+                                          href="https://github.com/danielmarcgardner"
+                                    >
+                                          <h3>
+                                                GitHub
+                                          </h3>
+                                          <p>
+                                                @danielmarcgardner
+                                          </p>
+                                    </a>
+                              </div>
+                        </GridColumn>
+                        <GridColumn
+                              computer={4}
+                              mobile={16}
+                              tablet={8}
+                        >
+                              <div
+                                    className="contactdivs"
+                              >
+                                    <a
+                                          href="https://www.linkedin.com/in/danielmarcgardner/"
+                                    >
+                                          <h3>
+                                                LinkedIn
+                                          </h3>
+                                          <p>
+                                                @danielmarcgardner
+                                          </p>
+                                    </a>
+                              </div>
+                        </GridColumn>
+                        <GridColumn
+                              computer={4}
+                              mobile={16}
+                              tablet={8}
+                        >
+                              <div
+                                    className="contactdivs"
+                              >
+                                    <a
+                                          href="https://twitter.com/danielmgardner1"
+                                    >
+                                          <h3>
+                                                Twitter
+                                          </h3>
+                                          <p>
+                                                @danielmgardner1
+                                          </p>
+                                    </a>
+                              </div>
+                        </GridColumn>
+                  </GridRow>
+            </Grid>
+      </Container>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Contact />,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {},
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          id="contacthero"
+>
+          <Container>
+                    <h1
+                              id="contactheroheader"
+                    >
+                              Contact
+                    </h1>
+                    <Grid
+                              centered={true}
+                              columns={2}
+                              stackable={true}
+                              textAlign="center"
+                    >
+                              <GridRow>
+                                        <GridColumn
+                                                  computer={4}
+                                                  mobile={16}
+                                                  tablet={8}
+                                        >
+                                                  <div
+                                                            className="contactdivs"
+                                                  >
+                                                            <a
+                                                                      href="mailto:daniel.marc.gardner@gmail.com"
+                                                            >
+                                                                      <h3>
+                                                                                Email Me
+                                                                      </h3>
+                                                                      <p>
+                                                                                daniel.marc.gardner@gmail.com
+                                                                      </p>
+                                                            </a>
+                                                  </div>
+                                        </GridColumn>
+                                        <GridColumn
+                                                  computer={4}
+                                                  mobile={16}
+                                                  tablet={8}
+                                        >
+                                                  <div
+                                                            className="contactdivs"
+                                                  >
+                                                            <a
+                                                                      href="https://github.com/danielmarcgardner"
+                                                            >
+                                                                      <h3>
+                                                                                GitHub
+                                                                      </h3>
+                                                                      <p>
+                                                                                @danielmarcgardner
+                                                                      </p>
+                                                            </a>
+                                                  </div>
+                                        </GridColumn>
+                                        <GridColumn
+                                                  computer={4}
+                                                  mobile={16}
+                                                  tablet={8}
+                                        >
+                                                  <div
+                                                            className="contactdivs"
+                                                  >
+                                                            <a
+                                                                      href="https://www.linkedin.com/in/danielmarcgardner/"
+                                                            >
+                                                                      <h3>
+                                                                                LinkedIn
+                                                                      </h3>
+                                                                      <p>
+                                                                                @danielmarcgardner
+                                                                      </p>
+                                                            </a>
+                                                  </div>
+                                        </GridColumn>
+                                        <GridColumn
+                                                  computer={4}
+                                                  mobile={16}
+                                                  tablet={8}
+                                        >
+                                                  <div
+                                                            className="contactdivs"
+                                                  >
+                                                            <a
+                                                                      href="https://twitter.com/danielmgardner1"
+                                                            >
+                                                                      <h3>
+                                                                                Twitter
+                                                                      </h3>
+                                                                      <p>
+                                                                                @danielmgardner1
+                                                                      </p>
+                                                            </a>
+                                                  </div>
+                                        </GridColumn>
+                              </GridRow>
+                    </Grid>
+          </Container>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          id="contacthero"
+>
+          <Container>
+                    <h1
+                              id="contactheroheader"
+                    >
+                              Contact
+                    </h1>
+                    <Grid
+                              centered={true}
+                              columns={2}
+                              stackable={true}
+                              textAlign="center"
+                    >
+                              <GridRow>
+                                        <GridColumn
+                                                  computer={4}
+                                                  mobile={16}
+                                                  tablet={8}
+                                        >
+                                                  <div
+                                                            className="contactdivs"
+                                                  >
+                                                            <a
+                                                                      href="mailto:daniel.marc.gardner@gmail.com"
+                                                            >
+                                                                      <h3>
+                                                                                Email Me
+                                                                      </h3>
+                                                                      <p>
+                                                                                daniel.marc.gardner@gmail.com
+                                                                      </p>
+                                                            </a>
+                                                  </div>
+                                        </GridColumn>
+                                        <GridColumn
+                                                  computer={4}
+                                                  mobile={16}
+                                                  tablet={8}
+                                        >
+                                                  <div
+                                                            className="contactdivs"
+                                                  >
+                                                            <a
+                                                                      href="https://github.com/danielmarcgardner"
+                                                            >
+                                                                      <h3>
+                                                                                GitHub
+                                                                      </h3>
+                                                                      <p>
+                                                                                @danielmarcgardner
+                                                                      </p>
+                                                            </a>
+                                                  </div>
+                                        </GridColumn>
+                                        <GridColumn
+                                                  computer={4}
+                                                  mobile={16}
+                                                  tablet={8}
+                                        >
+                                                  <div
+                                                            className="contactdivs"
+                                                  >
+                                                            <a
+                                                                      href="https://www.linkedin.com/in/danielmarcgardner/"
+                                                            >
+                                                                      <h3>
+                                                                                LinkedIn
+                                                                      </h3>
+                                                                      <p>
+                                                                                @danielmarcgardner
+                                                                      </p>
+                                                            </a>
+                                                  </div>
+                                        </GridColumn>
+                                        <GridColumn
+                                                  computer={4}
+                                                  mobile={16}
+                                                  tablet={8}
+                                        >
+                                                  <div
+                                                            className="contactdivs"
+                                                  >
+                                                            <a
+                                                                      href="https://twitter.com/danielmgardner1"
+                                                            >
+                                                                      <h3>
+                                                                                Twitter
+                                                                      </h3>
+                                                                      <p>
+                                                                                @danielmgardner1
+                                                                      </p>
+                                                            </a>
+                                                  </div>
+                                        </GridColumn>
+                              </GridRow>
+                    </Grid>
+          </Container>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Contact />,
+}
+`;

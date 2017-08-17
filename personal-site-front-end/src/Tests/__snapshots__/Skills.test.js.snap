@@ -1,0 +1,1221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skills BackEndSkills renders 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="skillscategory"
+>
+    <h1
+        className="skillsheader"
+    >
+         Back End Skills 
+    </h1>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="node.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="knex.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="bookshelf.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="postgresql.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="swagger.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="jwt.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="oauth.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="express.png"
+        />
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="skillscategory"
+>
+      <h1
+            className="skillsheader"
+      >
+             Back End Skills 
+      </h1>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="node.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="knex.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="bookshelf.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="postgresql.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="swagger.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="jwt.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="oauth.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="express.png"
+            />
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <BackEndSkills />,
+      "_debugID": 5,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {},
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 3,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="skillscategory"
+>
+          <h1
+                    className="skillsheader"
+          >
+                     Back End Skills 
+          </h1>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="node.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="knex.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="bookshelf.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="postgresql.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="swagger.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="jwt.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="oauth.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="express.png"
+                    />
+          </div>
+</div>,
+        "_debugID": 6,
+        "_renderedOutput": <div
+          className="skillscategory"
+>
+          <h1
+                    className="skillsheader"
+          >
+                     Back End Skills 
+          </h1>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="node.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="knex.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="bookshelf.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="postgresql.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="swagger.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="jwt.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="oauth.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="express.png"
+                    />
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <BackEndSkills />,
+}
+`;
+
+exports[`Skills FrontEndSkills renders 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="skillscategory"
+>
+    <h1
+        className="skillsheader"
+    >
+         Front End Skills 
+    </h1>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="js.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="react.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="redux.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="html5.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="css3.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="reactrouter.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="semantic.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="materialize.png"
+        />
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="skillscategory"
+>
+      <h1
+            className="skillsheader"
+      >
+             Front End Skills 
+      </h1>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="js.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="react.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="redux.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="html5.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="css3.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="reactrouter.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="semantic.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="materialize.png"
+            />
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <FrontEndSkills />,
+      "_debugID": 3,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {},
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 2,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="skillscategory"
+>
+          <h1
+                    className="skillsheader"
+          >
+                     Front End Skills 
+          </h1>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="js.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="react.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="redux.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="html5.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="css3.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="reactrouter.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="semantic.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="materialize.png"
+                    />
+          </div>
+</div>,
+        "_debugID": 4,
+        "_renderedOutput": <div
+          className="skillscategory"
+>
+          <h1
+                    className="skillsheader"
+          >
+                     Front End Skills 
+          </h1>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="js.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="react.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="redux.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="html5.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="css3.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="reactrouter.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="semantic.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="materialize.png"
+                    />
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <FrontEndSkills />,
+}
+`;
+
+exports[`Skills OtherSkills renders 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="skillscategory"
+>
+    <h1
+        className="skillsheader"
+    >
+         Testing & Other Skills 
+    </h1>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="jest.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="mocha.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="chai.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="supertest.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="git.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="github.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="heroku.png"
+        />
+    </div>
+    <div
+        className="skilldiv"
+    >
+        <img
+            className="skillimage"
+            src="npm.png"
+        />
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="skillscategory"
+>
+      <h1
+            className="skillsheader"
+      >
+             Testing & Other Skills 
+      </h1>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="jest.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="mocha.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="chai.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="supertest.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="git.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="github.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="heroku.png"
+            />
+      </div>
+      <div
+            className="skilldiv"
+      >
+            <img
+                  className="skillimage"
+                  src="npm.png"
+            />
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <OtherSkills />,
+      "_debugID": 7,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {},
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 4,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="skillscategory"
+>
+          <h1
+                    className="skillsheader"
+          >
+                     Testing & Other Skills 
+          </h1>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="jest.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="mocha.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="chai.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="supertest.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="git.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="github.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="heroku.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="npm.png"
+                    />
+          </div>
+</div>,
+        "_debugID": 8,
+        "_renderedOutput": <div
+          className="skillscategory"
+>
+          <h1
+                    className="skillsheader"
+          >
+                     Testing & Other Skills 
+          </h1>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="jest.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="mocha.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="chai.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="supertest.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="git.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="github.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="heroku.png"
+                    />
+          </div>
+          <div
+                    className="skilldiv"
+          >
+                    <img
+                              className="skillimage"
+                              src="npm.png"
+                    />
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <OtherSkills />,
+}
+`;
+
+exports[`Skills SkillsHero renders 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    id="skillshero"
+>
+    <Container>
+        <h1
+            id="skillsmainheader"
+        >
+            Skills 
+        </h1>
+        <Grid
+            columns={3}
+        >
+            <GridRow>
+                <GridColumn>
+                    <FrontEndSkills />
+                </GridColumn>
+                <GridColumn>
+                    <BackEndSkills />
+                </GridColumn>
+                <GridColumn>
+                    <OtherSkills />
+                </GridColumn>
+            </GridRow>
+        </Grid>
+    </Container>
+</div>,
+  "nodes": Array [
+    <div
+      id="skillshero"
+>
+      <Container>
+            <h1
+                  id="skillsmainheader"
+            >
+                  Skills 
+            </h1>
+            <Grid
+                  columns={3}
+            >
+                  <GridRow>
+                        <GridColumn>
+                              <FrontEndSkills />
+                        </GridColumn>
+                        <GridColumn>
+                              <BackEndSkills />
+                        </GridColumn>
+                        <GridColumn>
+                              <OtherSkills />
+                        </GridColumn>
+                  </GridRow>
+            </Grid>
+      </Container>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <SkillsHero />,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {},
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          id="skillshero"
+>
+          <Container>
+                    <h1
+                              id="skillsmainheader"
+                    >
+                              Skills 
+                    </h1>
+                    <Grid
+                              columns={3}
+                    >
+                              <GridRow>
+                                        <GridColumn>
+                                                  <FrontEndSkills />
+                                        </GridColumn>
+                                        <GridColumn>
+                                                  <BackEndSkills />
+                                        </GridColumn>
+                                        <GridColumn>
+                                                  <OtherSkills />
+                                        </GridColumn>
+                              </GridRow>
+                    </Grid>
+          </Container>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          id="skillshero"
+>
+          <Container>
+                    <h1
+                              id="skillsmainheader"
+                    >
+                              Skills 
+                    </h1>
+                    <Grid
+                              columns={3}
+                    >
+                              <GridRow>
+                                        <GridColumn>
+                                                  <FrontEndSkills />
+                                        </GridColumn>
+                                        <GridColumn>
+                                                  <BackEndSkills />
+                                        </GridColumn>
+                                        <GridColumn>
+                                                  <OtherSkills />
+                                        </GridColumn>
+                              </GridRow>
+                    </Grid>
+          </Container>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <SkillsHero />,
+}
+`;
