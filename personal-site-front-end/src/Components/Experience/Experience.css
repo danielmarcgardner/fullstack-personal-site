@@ -6,7 +6,7 @@
 
 #experiencehero {
   width: 100%;
-  height: 850px;
+  height: fit-content;
   background-color: #9bc4b3;
   display: flex;
   align-items: center;
@@ -23,4 +23,12 @@
   font-size: 24px;
   color: #33393a;
   list-style-type:circle;
+}
+
+.aboutmediv {
+  width: 100%;
+}
+
+#aboutmepic {
+  border: 5px solid #202938 !important;
 }
