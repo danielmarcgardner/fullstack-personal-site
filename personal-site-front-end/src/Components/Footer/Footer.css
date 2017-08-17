@@ -1,0 +1,18 @@
+#footer {
+  width: 100%;
+  height: 50px;
+  background-color: #202938;
+}
+
+#copyright {
+  display: inline-block;
+  color: #679ffc;
+  text-align: center;
+  height: 50px;
+  padding-top:15px;
+  margin-left: 50px;
+}
+
+#footerlinks {
+  float:right;
+}

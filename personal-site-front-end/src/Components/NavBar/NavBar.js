@@ -6,6 +6,9 @@ const navbar = props => (
     <div className="navitem">
       Sign In
     </div>
+    <div className="navitem">
+      Sign Up
+    </div>
     <div id="navlinks">
       <div className="navitem" onClick={() => props.history.push('/')}>
         Home
