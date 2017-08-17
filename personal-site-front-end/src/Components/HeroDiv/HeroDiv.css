@@ -1,0 +1,27 @@
+#herodiv {
+  background: url('../../Images/Milo.jpg');
+  width: 100%;
+  height: 500px;
+  background-size: cover ;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  text-align: right;
+}
+
+#textDiv {
+  float:right;
+  width: 50%;
+  text-align: center;
+}
+
+#herotext {
+  margin-top: 0px !important;
+  padding-top: 200px !important;
+  font-size: 60px;
+  font-family: 'Just Another Hand', cursive;
+}
+
+#herosubheader {
+  font-size: 48px;
+  font-family: 'Just Another Hand', cursive;
+}

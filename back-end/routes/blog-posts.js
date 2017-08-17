@@ -14,7 +14,7 @@ router.route('/blogposts')
     .then(blogPosts => res.status(200).json(sorterOfBlogs(blogPosts)));
   })
 
-  .post((req, res, next) => {
+  .post((req, res) => {
     const knex = require('../knex.js');
     const newPost = {
       title: req.body.title,

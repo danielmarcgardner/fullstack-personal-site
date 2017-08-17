@@ -168,34 +168,104 @@ describe('Helpers and Middleware Tests', (done) => {
     });
   });
   describe('Auth Middleware', (done) => {
-    it('Rejects users who are not logged in from accessing blogposts', (done) => {
+    it('Rejects users who are not logged in from adding blogposts', (done) => {
+      const newPost = {
+        title: 'My Third Post!',
+        author: 1,
+        content: 'Leggings iPhone salvia dreamcatcher, brooklyn shoreditch biodiesel actually helvetica PBR&B master cleanse. Biodiesel adaptogen post-ironic retro hashtag, health goth schlitz iPhone drinking vinegar occupy gentrify pitchfork keffiyeh. Deep v post-ironic flannel, iceland heirloom echo park kombucha man braid gluten-free blog 3 wolf moon aesthetic. Distillery pok pok pickled fam, jean shorts kale chips PBR&B plaid. Biodiesel polaroid squid authentic distillery. Etsy cliche disrupt, seitan hexagon hashtag squid salvia blog cred. Poke viral truffaut austin. Meh post-ironic kickstarter vinyl humblebrag prism freegan cardigan meditation actually narwhal pickled you probably havent heard of them. VHS poutine chambray plaid franzen taiyaki XOXO bicycle rights thundercats lo-fi organic you probably havent heard of them. Glossier pour-over austin poutine raclette lo-fi single-origin coffee yuccie microdosing readymade irony try-hard YOLO. Tofu hexagon stumptown direct trade authentic. Meh kogi selvage palo santo butcher tousled snackwave. Church-key waistcoat intelligentsia leggings tumeric yr austin kale chips bushwick next level pop-up four dollar toast. Food truck paleo raw denim vegan hammock taxidermy chia occupy pitchfork dreamcatcher tote bag hot chicken activated charcoal seitan glossier.',
+        tags: [1, 2],
+      };
       request(app)
-      .get('/api/blogposts')
+      .post('/api/blogposts')
       .set('Accept', 'application/json')
+      .send(newPost)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(401)
       .expect({ error: 'Not Logged In' }, done);
     });
-    it('Rejects users who are not logged in from accessing tags', (done) => {
+    it('Rejects users who are not logged in from updating blogposts', (done) => {
+      const updatedPost = {
+        title: 'Better Post Title!',
+      };
       request(app)
-      .get('/api/tags')
+      .patch('/api/blogposts/1')
       .set('Accept', 'application/json')
+      .send(updatedPost)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(401)
       .expect({ error: 'Not Logged In' }, done);
     });
-    it('Rejects users who are not logged in from accessing articles', (done) => {
+    it('Rejects users who are not logged in from adding tags', (done) => {
+      const newTag = { tag: 'WDR' };
       request(app)
-      .get('/api/articles')
+      .post('/api/tags')
       .set('Accept', 'application/json')
+      .send(newTag)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(401)
       .expect({ error: 'Not Logged In' }, done);
     });
-    it('Rejects users who are not logged in from accessing projects', (done) => {
+    it('Rejects users who are not logged in from adding tags to a blog', (done) => {
+      const newTag = { tag: 'WDR' };
       request(app)
-      .get('/api/projects')
+      .post('/api/tags/blog')
       .set('Accept', 'application/json')
+      .send(newTag)
+      .expect('Content-Type', 'application/json; charset=utf-8')
+      .expect(401)
+      .expect({ error: 'Not Logged In' }, done);
+    });
+    it('Rejects users who are not logged in from adding articles', (done) => {
+      const newArticle = {
+        title: 'How to set up your React-Redux Project',
+        source: 'Medium',
+        article_url: 'https://www.medium.com/soon-to-be-published',
+        author: 1,
+      };
+      request(app)
+      .post('/api/articles')
+      .set('Accept', 'application/json')
+      .send(newArticle)
+      .expect('Content-Type', 'application/json; charset=utf-8')
+      .expect(401)
+      .expect({ error: 'Not Logged In' }, done);
+    });
+    it('Rejects users who are not logged in from updating articles', (done) => {
+      const updatedArticle = {
+        source: 'Linkedin',
+      };
+      request(app)
+      .patch('/api/articles/1')
+      .set('Accept', 'application/json')
+      .send(updatedArticle)
+      .expect('Content-Type', 'application/json; charset=utf-8')
+      .expect(401)
+      .expect({ error: 'Not Logged In' }, done);
+    });
+    it('Rejects users who are not logged in from adding projects', (done) => {
+      const newProject = {
+        project_name: 'Learn To Code Workshop Materials',
+        github_url: 'https://github.com/danielmarcgardner/LearnToCode-HTML-CSS',
+        deployed_url: 'N/A',
+        description: 'My materials for my Learn To Code Workshop',
+        created_by: 1,
+      };
+      request(app)
+      .post('/api/projects')
+      .set('Accept', 'application/json')
+      .send(newProject)
+      .expect('Content-Type', 'application/json; charset=utf-8')
+      .expect(401)
+      .expect({ error: 'Not Logged In' }, done);
+    });
+    it('Rejects users who are not logged in from updating projects', (done) => {
+      const updatedProject = {
+        deployed_url: 'github.com',
+      };
+      request(app)
+      .patch('/api/projects/1')
+      .set('Accept', 'application/json')
+      .send(updatedProject)
       .expect('Content-Type', 'application/json; charset=utf-8')
       .expect(401)
       .expect({ error: 'Not Logged In' }, done);

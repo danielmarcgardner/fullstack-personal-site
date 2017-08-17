@@ -1,0 +1,35 @@
+#experienceheader {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 48px;
+  color: #33393a
+}
+
+#experiencehero {
+  width: 100%;
+  height: fit-content;
+  background-color: #9bc4b3;
+  display: flex;
+  align-items: center;
+}
+
+.experiencesubheader {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 36px;
+  color: #33393a
+}
+
+.ulexperience > li {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 28px;
+  line-height: 30px;
+  color: #33393a;
+  list-style-type:circle;
+}
+
+.aboutmediv {
+  width: 100%;
+}
+
+#aboutmepic {
+  border: 5px solid #202938 !important;
+}

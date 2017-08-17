@@ -1,0 +1,43 @@
+#skillshero {
+  width: 100%;
+  height: fit-content;
+  background-color: #202938;
+  display: flex;
+  align-items: center;
+}
+
+#skillsmainheader {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 48px;
+  color: #679ffc;
+}
+
+
+.skillscategory {
+  width: 100%;
+  height: inherit;
+  background-color: #679ffc;
+  border-radius: 10%;
+  text-align: center;
+  padding: 2%;
+}
+
+.skillsheader {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 36px;
+  color: #202938;
+}
+
+.skilldiv {
+  height: 75px;
+  width: 75px;
+  margin: 2%;
+  display: inline-flex;
+  text-align: center;
+}
+
+.skillimage {
+  height: inherit;
+  width: auto;
+  display: block;
+}

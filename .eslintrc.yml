@@ -13,3 +13,7 @@ rules:
     - 0
   react/prop-types:
     - 1
+  jsx-a11y/alt-text:
+    - 0
+env:
+  browser: true
