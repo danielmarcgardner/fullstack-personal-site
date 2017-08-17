@@ -1,0 +1,38 @@
+#contacthero {
+  width: 100%;
+  height: fit-content;
+  background-color: #f2cfa2;
+  color: #4c4a47;
+}
+
+#contactheroheader {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 48px;
+}
+
+.contactdivs {
+  text-align: center;
+  font-family: 'Just Another Hand', cursive;
+  border: 2px solid #4c4a47;
+  border-radius: 10%;
+  width: 200px;
+}
+
+.contactdivs h3 {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 36px;
+  color: #4c4a47;
+}
+
+.contactdivs p {
+  font-size: 28px;
+  color: #4c4a47;
+}
+
+.contactdivs:hover {
+  background-color: #4c4a47;
+
+}
+.contactdivs:hover a h3, .contactdivs:hover a p {
+  color: #f2cfa2 !important;
+}

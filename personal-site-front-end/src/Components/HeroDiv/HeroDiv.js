@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Grid } from 'semantic-ui-react';
 import './HeroDiv.css';
 
 const HeroDiv = () => (
