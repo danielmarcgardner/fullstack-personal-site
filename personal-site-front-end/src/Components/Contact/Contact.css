@@ -18,6 +18,13 @@
   width: 200px;
 }
 
+.contacticon {
+  color: #4c4a47 !important;
+  text-align: center;
+  margin: 0 !important;
+}
+
+
 .contactdivs h3 {
   font-family: 'Just Another Hand', cursive;
   font-size: 36px;
@@ -33,6 +40,6 @@
   background-color: #4c4a47;
 
 }
-.contactdivs:hover a h3, .contactdivs:hover a p {
+.contactdivs:hover a h3, .contactdivs:hover a p, .contactdivs:hover .contacticon {
   color: #f2cfa2 !important;
 }

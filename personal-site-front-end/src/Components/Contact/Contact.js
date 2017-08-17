@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid } from 'semantic-ui-react';
+import { Container, Grid, Icon } from 'semantic-ui-react';
 import './Contact.css';
 
 const Contact = () => (
@@ -12,6 +12,7 @@ const Contact = () => (
             <div className="contactdivs">
               <a href="mailto:daniel.marc.gardner@gmail.com">
                 <h3>Email Me</h3>
+                <Icon name="mail" size="huge" className="contacticon" />
                 <p>daniel.marc.gardner@gmail.com</p>
               </a>
             </div>
@@ -20,6 +21,7 @@ const Contact = () => (
             <div className="contactdivs">
               <a href="https://github.com/danielmarcgardner">
                 <h3>GitHub</h3>
+                <Icon name="github" size="huge" className="contacticon" />
                 <p>@danielmarcgardner</p>
               </a>
             </div>
@@ -28,6 +30,7 @@ const Contact = () => (
             <div className="contactdivs">
               <a href="https://www.linkedin.com/in/danielmarcgardner/">
                 <h3>LinkedIn</h3>
+                <Icon name="linkedin" size="huge" className="contacticon" />
                 <p>@danielmarcgardner</p>
               </a>
             </div>
@@ -36,6 +39,7 @@ const Contact = () => (
             <div className="contactdivs">
               <a href="https://twitter.com/danielmgardner1">
                 <h3>Twitter</h3>
+                <Icon name="twitter" size="huge" className="contacticon" />
                 <p>@danielmgardner1</p>
               </a>
             </div>
