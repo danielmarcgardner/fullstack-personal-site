@@ -12,5 +12,5 @@ ReactDOM.render(
   ,
   document.getElementById('root'),
 );
-
+/* istanbul ignore next */
 registerServiceWorker();

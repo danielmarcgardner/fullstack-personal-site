@@ -38,6 +38,12 @@ ShallowWrapper {
                             <h3>
                                 Email Me
                             </h3>
+                            <Icon
+                                as="i"
+                                className="contacticon"
+                                name="mail"
+                                size="huge"
+                            />
                             <p>
                                 daniel.marc.gardner@gmail.com
                             </p>
@@ -58,6 +64,12 @@ ShallowWrapper {
                             <h3>
                                 GitHub
                             </h3>
+                            <Icon
+                                as="i"
+                                className="contacticon"
+                                name="github"
+                                size="huge"
+                            />
                             <p>
                                 @danielmarcgardner
                             </p>
@@ -78,6 +90,12 @@ ShallowWrapper {
                             <h3>
                                 LinkedIn
                             </h3>
+                            <Icon
+                                as="i"
+                                className="contacticon"
+                                name="linkedin"
+                                size="huge"
+                            />
                             <p>
                                 @danielmarcgardner
                             </p>
@@ -98,6 +116,12 @@ ShallowWrapper {
                             <h3>
                                 Twitter
                             </h3>
+                            <Icon
+                                as="i"
+                                className="contacticon"
+                                name="twitter"
+                                size="huge"
+                            />
                             <p>
                                 @danielmgardner1
                             </p>
@@ -139,6 +163,12 @@ ShallowWrapper {
                                           <h3>
                                                 Email Me
                                           </h3>
+                                          <Icon
+                                                as="i"
+                                                className="contacticon"
+                                                name="mail"
+                                                size="huge"
+                                          />
                                           <p>
                                                 daniel.marc.gardner@gmail.com
                                           </p>
@@ -159,6 +189,12 @@ ShallowWrapper {
                                           <h3>
                                                 GitHub
                                           </h3>
+                                          <Icon
+                                                as="i"
+                                                className="contacticon"
+                                                name="github"
+                                                size="huge"
+                                          />
                                           <p>
                                                 @danielmarcgardner
                                           </p>
@@ -179,6 +215,12 @@ ShallowWrapper {
                                           <h3>
                                                 LinkedIn
                                           </h3>
+                                          <Icon
+                                                as="i"
+                                                className="contacticon"
+                                                name="linkedin"
+                                                size="huge"
+                                          />
                                           <p>
                                                 @danielmarcgardner
                                           </p>
@@ -199,6 +241,12 @@ ShallowWrapper {
                                           <h3>
                                                 Twitter
                                           </h3>
+                                          <Icon
+                                                as="i"
+                                                className="contacticon"
+                                                name="twitter"
+                                                size="huge"
+                                          />
                                           <p>
                                                 @danielmgardner1
                                           </p>
@@ -274,6 +322,12 @@ ShallowWrapper {
                                                                       <h3>
                                                                                 Email Me
                                                                       </h3>
+                                                                      <Icon
+                                                                                as="i"
+                                                                                className="contacticon"
+                                                                                name="mail"
+                                                                                size="huge"
+                                                                      />
                                                                       <p>
                                                                                 daniel.marc.gardner@gmail.com
                                                                       </p>
@@ -294,6 +348,12 @@ ShallowWrapper {
                                                                       <h3>
                                                                                 GitHub
                                                                       </h3>
+                                                                      <Icon
+                                                                                as="i"
+                                                                                className="contacticon"
+                                                                                name="github"
+                                                                                size="huge"
+                                                                      />
                                                                       <p>
                                                                                 @danielmarcgardner
                                                                       </p>
@@ -314,6 +374,12 @@ ShallowWrapper {
                                                                       <h3>
                                                                                 LinkedIn
                                                                       </h3>
+                                                                      <Icon
+                                                                                as="i"
+                                                                                className="contacticon"
+                                                                                name="linkedin"
+                                                                                size="huge"
+                                                                      />
                                                                       <p>
                                                                                 @danielmarcgardner
                                                                       </p>
@@ -334,6 +400,12 @@ ShallowWrapper {
                                                                       <h3>
                                                                                 Twitter
                                                                       </h3>
+                                                                      <Icon
+                                                                                as="i"
+                                                                                className="contacticon"
+                                                                                name="twitter"
+                                                                                size="huge"
+                                                                      />
                                                                       <p>
                                                                                 @danielmgardner1
                                                                       </p>
@@ -375,6 +447,12 @@ ShallowWrapper {
                                                                       <h3>
                                                                                 Email Me
                                                                       </h3>
+                                                                      <Icon
+                                                                                as="i"
+                                                                                className="contacticon"
+                                                                                name="mail"
+                                                                                size="huge"
+                                                                      />
                                                                       <p>
                                                                                 daniel.marc.gardner@gmail.com
                                                                       </p>
@@ -395,6 +473,12 @@ ShallowWrapper {
                                                                       <h3>
                                                                                 GitHub
                                                                       </h3>
+                                                                      <Icon
+                                                                                as="i"
+                                                                                className="contacticon"
+                                                                                name="github"
+                                                                                size="huge"
+                                                                      />
                                                                       <p>
                                                                                 @danielmarcgardner
                                                                       </p>
@@ -415,6 +499,12 @@ ShallowWrapper {
                                                                       <h3>
                                                                                 LinkedIn
                                                                       </h3>
+                                                                      <Icon
+                                                                                as="i"
+                                                                                className="contacticon"
+                                                                                name="linkedin"
+                                                                                size="huge"
+                                                                      />
                                                                       <p>
                                                                                 @danielmarcgardner
                                                                       </p>
@@ -435,6 +525,12 @@ ShallowWrapper {
                                                                       <h3>
                                                                                 Twitter
                                                                       </h3>
+                                                                      <Icon
+                                                                                as="i"
+                                                                                className="contacticon"
+                                                                                name="twitter"
+                                                                                size="huge"
+                                                                      />
                                                                       <p>
                                                                                 @danielmgardner1
                                                                       </p>

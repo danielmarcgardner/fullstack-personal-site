@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavBar Renders 1`] = `
+exports[`Footer Renders 1`] = `
 ShallowWrapper {
   "complexSelector": ComplexSelector {
     "buildPredicate": [Function],
@@ -9,75 +9,53 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <div
-    id="navbar"
+    id="footer"
 >
     <div
-        className="navitem"
+        id="copyright"
     >
-        Sign In
+        © Daniel Gardner 2017
     </div>
     <div
-        className="navitem"
-    >
-        Sign Up
-    </div>
-    <div
-        id="navlinks"
+        id="footerlinks"
     >
         <div
             className="navitem"
             onClick={[Function]}
         >
-            Home
+            Sign Up
         </div>
         <div
             className="navitem"
             onClick={[Function]}
         >
-            Projects
-        </div>
-        <div
-            className="navitem"
-            onClick={[Function]}
-        >
-            Blog
+            Sign In
         </div>
     </div>
 </div>,
   "nodes": Array [
     <div
-      id="navbar"
+      id="footer"
 >
       <div
-            className="navitem"
+            id="copyright"
       >
-            Sign In
+            © Daniel Gardner 2017
       </div>
       <div
-            className="navitem"
-      >
-            Sign Up
-      </div>
-      <div
-            id="navlinks"
+            id="footerlinks"
       >
             <div
                   className="navitem"
                   onClick={[Function]}
             >
-                  Home
+                  Sign Up
             </div>
             <div
                   className="navitem"
                   onClick={[Function]}
             >
-                  Projects
-            </div>
-            <div
-                  className="navitem"
-                  onClick={[Function]}
-            >
-                  Blog
+                  Sign In
             </div>
       </div>
 </div>,
@@ -88,7 +66,7 @@ ShallowWrapper {
       "_calledComponentWillUnmount": false,
       "_compositeType": 2,
       "_context": Object {},
-      "_currentElement": <navbar />,
+      "_currentElement": <Footer />,
       "_debugID": 1,
       "_hostContainerInfo": null,
       "_hostParent": null,
@@ -117,75 +95,53 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
-          id="navbar"
+          id="footer"
 >
           <div
-                    className="navitem"
+                    id="copyright"
           >
-                    Sign In
+                    © Daniel Gardner 2017
           </div>
           <div
-                    className="navitem"
-          >
-                    Sign Up
-          </div>
-          <div
-                    id="navlinks"
+                    id="footerlinks"
           >
                     <div
                               className="navitem"
                               onClick={[Function]}
                     >
-                              Home
+                              Sign Up
                     </div>
                     <div
                               className="navitem"
                               onClick={[Function]}
                     >
-                              Projects
-                    </div>
-                    <div
-                              className="navitem"
-                              onClick={[Function]}
-                    >
-                              Blog
+                              Sign In
                     </div>
           </div>
 </div>,
         "_debugID": 2,
         "_renderedOutput": <div
-          id="navbar"
+          id="footer"
 >
           <div
-                    className="navitem"
+                    id="copyright"
           >
-                    Sign In
+                    © Daniel Gardner 2017
           </div>
           <div
-                    className="navitem"
-          >
-                    Sign Up
-          </div>
-          <div
-                    id="navlinks"
+                    id="footerlinks"
           >
                     <div
                               className="navitem"
                               onClick={[Function]}
                     >
-                              Home
+                              Sign Up
                     </div>
                     <div
                               className="navitem"
                               onClick={[Function]}
                     >
-                              Projects
-                    </div>
-                    <div
-                              className="navitem"
-                              onClick={[Function]}
-                    >
-                              Blog
+                              Sign In
                     </div>
           </div>
 </div>,
@@ -200,6 +156,6 @@ ShallowWrapper {
     "render": [Function],
   },
   "root": [Circular],
-  "unrendered": <navbar />,
+  "unrendered": <Footer />,
 }
 `;

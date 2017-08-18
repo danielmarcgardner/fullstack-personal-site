@@ -8,7 +8,7 @@ describe('NavBar', () => {
   it('Renders', () => {
     expect(component).toMatchSnapshot();
   });
-  it('Has 4 navitems', () => {
-    expect(component.find('.navitem').length).toEqual(4);
+  it('Has 5 navitems', () => {
+    expect(component.find('.navitem').length).toEqual(5);
   });
 });
