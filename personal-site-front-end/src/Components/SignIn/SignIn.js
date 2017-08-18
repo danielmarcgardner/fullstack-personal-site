@@ -40,7 +40,9 @@ const SignIn = (props) => {
                     validate={[required, minValue8]}
                   />
                 </Form.Field>
-                {renderIf(user.error)(<p className="error"><Icon name="warning sign" />{user.error}</p>)}
+                {renderIf(user.error)(
+                  <p className="error"><Icon name="warning sign" />{user.error}</p>,
+                )}
                 <Form.Button basic>Login</Form.Button>
               </Form>
             </Grid.Column>
@@ -54,6 +56,8 @@ const SignIn = (props) => {
 SignIn.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
   signInUser: PropTypes.func.isRequired,
+  user: PropTypes.objectOf(PropTypes.string, PropTypes.bool).isRequired,
+  history: PropTypes.objectOf(PropTypes.object, PropTypes.number, PropTypes.string).isRequired,
 };
 
 export default SignIn;

@@ -1,7 +1,23 @@
 #navbar {
   width: 101%;
-  height: 50px;
+  min-height: 50px;
   background-color: #202938;
+  height: fit-content;
+}
+
+#usernamedisplay {
+  color: #679ffc;
+  padding-top:8px;
+  height: 50px;
+  width: 165px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#usernamedisplay:hover {
+  color: #202938;
+  background-color: #679ffc;
+  cursor: pointer
 }
 
 .navitem {
@@ -11,6 +27,7 @@
   height: 50px;
   padding-top:15px;
   width: 75px;
+  font-weight: 700;
 }
 
 .navitem:hover {
@@ -21,6 +38,10 @@
 
 #navlinks {
   float: right;
-  margin-right: 5%;
+  margin-right: 2.5%;
   height:inherit;
+}
+
+.navsignin {
+  float: left;
 }
