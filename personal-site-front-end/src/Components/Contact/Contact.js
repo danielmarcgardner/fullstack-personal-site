@@ -45,6 +45,7 @@ const Contact = () => (
             </div>
           </Grid.Column>
         </Grid.Row>
+        <p id="copyright">&copy; Daniel Gardner 2017</p>
       </Grid>
     </Container>
   </div>

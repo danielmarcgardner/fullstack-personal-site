@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #202938;
 }
 
 .container {
@@ -9,4 +8,10 @@ body {
   margin-right: 15%;
   padding-top: 2.5% !important;
   padding-bottom: 2.5% !important;
+}
+
+.error {
+  color:#e52d2d;
+  text-align: center;
+  font-size: 14px;
 }

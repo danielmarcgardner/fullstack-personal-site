@@ -10,10 +10,8 @@ rules:
       - ".js"
       - ".jsx"
   import/no-unresolved:
-    - 0
+    - 1
   react/prop-types:
     - 1
-  jsx-a11y/alt-text:
-    - 0
 env:
   browser: true

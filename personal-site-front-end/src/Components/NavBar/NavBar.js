@@ -3,10 +3,10 @@ import './NavBar.css';
 
 const navbar = props => (
   <div id="navbar">
-    <div className="navitem">
+    <div className="navitem" onClick={() => props.history.push('/signin')}>
       Sign In
     </div>
-    <div className="navitem">
+    <div className="navitem" onClick={() => props.history.push('/signup')}>
       Sign Up
     </div>
     <div id="navlinks">

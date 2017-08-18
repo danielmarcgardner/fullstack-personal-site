@@ -43,3 +43,9 @@
 .contactdivs:hover a h3, .contactdivs:hover a p, .contactdivs:hover .contacticon {
   color: #f2cfa2 !important;
 }
+
+#copyright {
+  color: #4c4a47;
+  text-align: center;
+  padding-top:15px;
+}
