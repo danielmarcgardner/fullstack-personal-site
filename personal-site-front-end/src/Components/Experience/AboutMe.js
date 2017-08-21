@@ -6,8 +6,9 @@ const AboutMe = () => (
     <div className="aboutmediv">
       <h3 className="experiencesubheader">About Me</h3>
       <ul className="ulexperience">
+        <li>My passion has always been building things</li>
+        <li>I am a Bay Area Native</li>
         <li>I am Full Stack Developer with a specialty in React</li>
-        <li>I am  a Bay Area Native</li>
         <li>I am Bulldog Owner and Lover</li>
         <li>I have a beautiful girlfriend... she&apos;s brilliant</li>
       </ul>

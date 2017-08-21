@@ -129,6 +129,11 @@ ShallowWrapper {
                     </div>
                 </GridColumn>
             </GridRow>
+            <p
+                id="copyright"
+            >
+                © Daniel Gardner 2017
+            </p>
         </Grid>
     </Container>
 </div>,
@@ -254,6 +259,11 @@ ShallowWrapper {
                               </div>
                         </GridColumn>
                   </GridRow>
+                  <p
+                        id="copyright"
+                  >
+                        © Daniel Gardner 2017
+                  </p>
             </Grid>
       </Container>
 </div>,
@@ -413,6 +423,11 @@ ShallowWrapper {
                                                   </div>
                                         </GridColumn>
                               </GridRow>
+                              <p
+                                        id="copyright"
+                              >
+                                        © Daniel Gardner 2017
+                              </p>
                     </Grid>
           </Container>
 </div>,
@@ -538,6 +553,11 @@ ShallowWrapper {
                                                   </div>
                                         </GridColumn>
                               </GridRow>
+                              <p
+                                        id="copyright"
+                              >
+                                        © Daniel Gardner 2017
+                              </p>
                     </Grid>
           </Container>
 </div>,
