@@ -18,6 +18,7 @@ const SignIn = (props) => {
       <Container>
         <Segment>
           <Grid centered>
+            <h1 className="formheader">Sign In</h1>
             <Grid.Row>
               <Grid.Column computer={8} tablet={8} mobile={16}>
                 <Form onSubmit={handleSubmit(signInUser)} className="loginforms">

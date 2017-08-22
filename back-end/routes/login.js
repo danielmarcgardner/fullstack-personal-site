@@ -1,7 +1,8 @@
 const express = require('express');
-const router = express.Router();
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt-as-promised');
+const bcrypt = require('bcrypt');
+
+const router = express.Router();
 
 router.route('/login')
   .post((req, res) => {
@@ -11,7 +12,12 @@ router.route('/login')
       const compare = user[0].hashed_password;
       return bcrypt.compare(req.body.password, compare);
     })
-    .then(verified => knex('users').where('email', req.body.email))
+    .then((verified) => {
+      if (verified === false) {
+        return res.status(400).end({ error: 'Invalid Email or Password' });
+      }
+      return knex('users').where('email', req.body.email);
+    })
     .then((userToSend) => {
       const claim = { userId: userToSend.id };
       const token = jwt.sign(claim, process.env.JWT_KEY, {
@@ -21,7 +27,7 @@ router.route('/login')
       res.cookie('dgAuth', token);
       res.status(200).json(userToSend[0]);
     })
-    .catch(err => res.status(400).json('Invalid Email or Password'));
+    .catch(err => res.status(400).json({ error: 'Invalid Email or Password' }));
   });
 
 module.exports = router;

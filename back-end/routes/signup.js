@@ -1,7 +1,8 @@
 const express = require('express');
+
 const router = express.Router();
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt-as-promised');
+const bcrypt = require('bcrypt');
  /* istanbul ignore next */
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
@@ -29,6 +30,7 @@ router.route('/signup')
       res.status(200).json(signUp[0]);
     })
     .catch((err) => {
+      console.log(err);
       res.status(400).json('Email is already registered or field missing');
     });
   });

@@ -57,7 +57,7 @@ describe('#Login', (done) => {
       .set('Accept', 'application/json')
       .send(badUser)
       .expect('Content-Type', 'application/json; charset=utf-8')
-      .expect(400, JSON.stringify('Invalid Email or Password'), done);
+      .expect(400, { error: 'Invalid Email or Password' }, done);
     });
     it('should throw an error when the password is wrong', (done) => {
       const badUser = {
@@ -69,7 +69,7 @@ describe('#Login', (done) => {
       .set('Accept', 'application/json')
       .send(badUser)
       .expect('Content-Type', 'application/json; charset=utf-8')
-      .expect(400, JSON.stringify('Invalid Email or Password'), done);
+      .expect(400, { error: 'Invalid Email or Password' }, done);
     });
     it('should throw an error when the password is missing', (done) => {
       const badUser = {
@@ -80,7 +80,7 @@ describe('#Login', (done) => {
       .set('Accept', 'application/json')
       .send(badUser)
       .expect('Content-Type', 'application/json; charset=utf-8')
-      .expect(400, JSON.stringify('Invalid Email or Password'), done);
+      .expect(400, { error: 'Invalid Email or Password' }, done);
     });
     it('should throw an error when the email is missing', (done) => {
       const badUser = {
@@ -91,7 +91,7 @@ describe('#Login', (done) => {
       .set('Accept', 'application/json')
       .send(badUser)
       .expect('Content-Type', 'application/json; charset=utf-8')
-      .expect(400, JSON.stringify('Invalid Email or Password'), done);
+      .expect(400, { error: 'Invalid Email or Password' }, done);
     });
   });
 });

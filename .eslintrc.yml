@@ -13,5 +13,7 @@ rules:
     - 1
   react/prop-types:
     - 1
+  jsx-a11y/img-has-alt:
+    - 0
 env:
   browser: true
