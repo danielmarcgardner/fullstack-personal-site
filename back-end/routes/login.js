@@ -27,7 +27,10 @@ router.route('/login')
       res.cookie('dgAuth', token);
       res.status(200).json(userToSend[0]);
     })
-    .catch(err => res.status(400).json({ error: 'Invalid Email or Password' }));
+    .catch((err) => {
+      console.log(err);
+      return res.status(400).json({ error: 'Invalid Email or Password' });
+    });
   });
 
 module.exports = router;

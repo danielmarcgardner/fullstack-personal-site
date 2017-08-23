@@ -2,7 +2,7 @@ import React from 'react';
 import renderIf from 'render-if';
 import './NavBar.css';
 
-const navbar = ({ user, history }) => (
+const navbar = ({ user, history, signOutUser }) => (
   <div id="navbar">
     {renderIf(user.loggedIn === false)(
       <div className="navsignin">
@@ -17,7 +17,7 @@ const navbar = ({ user, history }) => (
     {
       renderIf(user.loggedIn === true)(
         <div className="navsignin">
-          <div id="usernamedisplay">
+          <div id="usernamedisplay" onClick={() => signOutUser()}>
             {`${user.name}`} <br />
             Sign Out
           </div>

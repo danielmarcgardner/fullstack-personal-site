@@ -1,21 +1,25 @@
-import { USER_SIGNIN, USER_SIGNIN_ERROR, USER_SIGNUP, USER_SIGNUP_ERROR } from '../../Constants/Constants';
+import * as CONST from '../../Constants/Constants';
 
 const signInAction = payload => ({
-  type: USER_SIGNIN,
+  type: CONST.USER_SIGNIN,
   payload,
 });
 
 const signUpAction = payload => ({
-  type: USER_SIGNUP,
+  type: CONST.USER_SIGNUP,
   payload,
 });
 
 const signInActionError = () => ({
-  type: USER_SIGNIN_ERROR,
+  type: CONST.USER_SIGNIN_ERROR,
 });
 
 const signUpActionError = () => ({
-  type: USER_SIGNUP_ERROR,
+  type: CONST.USER_SIGNUP_ERROR,
+});
+
+const signOutAction = () => ({
+  type: CONST.USER_SIGNOUT,
 });
 
 export function signInUser(info) {
@@ -35,5 +39,13 @@ export function signUpUser(info) {
       return dispatch(signUpActionError());
     }
     return dispatch(signUpAction(payload));
+  };
+}
+
+export function signOutUser() {
+  return async (dispatch, getState, { Api }) => {
+    const payload = await Api.signOut();
+    console.log(payload);
+    return dispatch(signOutAction());
   };
 }
