@@ -33,3 +33,27 @@
 #aboutmepic {
   border: 5px solid #202938 !important;
 }
+
+#resumebutton {
+  border-radius: 10%;
+  border: 5px solid #202938 !important;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 36px;
+  color: #33393a;
+  width: 50%;
+  height: fit-content;
+  min-height: 50px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  line-height: 50px;
+  vertical-align: middle;
+  justify-content: center !important;
+}
+
+#resumebutton:hover {
+  background-color: #33393a;
+  color:#9bc4b3;
+  cursor: pointer;
+}

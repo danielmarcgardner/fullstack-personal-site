@@ -14,6 +14,11 @@ const Experience = () => (
           </Grid.Column>
           <Grid.Column width={8}>
             <Image src={require('../../Images/daniel.jpg')} size="medium" shape="circular" centered id="aboutmepic" />
+            <a href={require('../../Assets/Daniel-Gardner-Resume.pdf')} download>
+              <div id="resumebutton">
+                Download Resume
+              </div>
+            </a>
           </Grid.Column>
         </Grid.Row>
       </Grid>
