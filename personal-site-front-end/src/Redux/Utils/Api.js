@@ -10,4 +10,7 @@ export default class Api {
   static signOut() {
     return axios('/api/signout').then(response => response.data).catch(() => 'error');
   }
+  static fetchBlogPosts() {
+    return axios('/api/blogposts').then(response => response.data).catch(() => 'error');
+  }
 }
