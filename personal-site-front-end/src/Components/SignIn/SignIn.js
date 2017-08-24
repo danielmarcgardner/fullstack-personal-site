@@ -59,8 +59,8 @@ const SignIn = (props) => {
 SignIn.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
   signInUser: PropTypes.func.isRequired,
-  user: PropTypes.objectOf(PropTypes.string, PropTypes.bool).isRequired,
-  history: PropTypes.objectOf(PropTypes.object, PropTypes.number, PropTypes.string).isRequired,
+  user: PropTypes.objectOf(PropTypes.bool, PropTypes.string).isRequired,
+  history: PropTypes.objectOf(PropTypes.number, PropTypes.object, PropTypes.string).isRequired,
 };
 
 export default SignIn;
